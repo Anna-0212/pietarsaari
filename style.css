@@ -71,21 +71,6 @@ body {
     margin: 3px;
 }
 
-.btn {
-    background-color: rgb(255, 132, 0);
-    padding: 10px 30px;
-    width: 140px;
-    color: rgb(1, 22, 89);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.btn:hover {
-    background-color: rgb(55, 105, 55);
-    color: white;
-    transform: scale(1.1); 
-    transition: transform 0.5s;
-} 
 
 /* titles */
 .header {
@@ -164,15 +149,9 @@ li {
     font-family: 'Montserrat', sans-serif;
     color: rgb(1, 22, 89);
     padding-top: 10px;
-    font-style: italic;
+    /* font-style: italic; */
 }
-.text-direction-small {
-    font-size: 19px;
-    font-style: italic;
-    padding-left: 50px;
-    margin-bottom: 0px;
-    margin-top: 25px;
-}
+
 
 /* heart+links */
 .container-heart {
@@ -211,7 +190,7 @@ a:hover {
 .text-direction {
     font-weight: bold;
     font-size: 25px;
-    text-shadow: 1px 1px;
+    /* text-shadow: 1px 1px; */
 }
 .text-two {
     display: flex;
@@ -220,19 +199,19 @@ a:hover {
     margin-right: 50px;
 }
 
-/* news */
+/* news
 .image-news {
     width: 200px;
     margin-left: 50px; 
     margin-top: 45px; 
     z-index: 2; 
     /* position: absolute; */
-    border-radius: 10px;
+    /* border-radius: 10px;
 }
 .text-news {
     font-size: 20px;
     margin-left: 50px;
-}
+}  */
 
 /* donate */
 .text-donate {
@@ -430,6 +409,22 @@ label {
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Avanti', arial; */
 }
+.btn {
+    background-color: rgb(255, 132, 0);
+    padding: 20px 30px;
+    width: 280px;
+    font-size: 20px;
+    color: rgb(1, 22, 89);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(55, 105, 55);
+    color: white;
+    transform: scale(1.1); 
+    transition: transform 0.5s;
+} 
 
 /* address */
 #box-address {
@@ -494,27 +489,17 @@ h5 {
 }
 .copyright {
     width: 15px;
-    padding-right: 5px;
+    padding-right: 40px 5px 0 5px;
 }
 
 /* button back-to-top */
 
 .topbutton {
-    /* width: 80px;
-    height: 30px; */
-    /* border: none; */
-    /* background-color:  rgb(229, 229, 229); */
-    /* text-align: center;
-    text-decoration: none;
-    padding: 10px; */
     position: fixed;
     bottom: 20px;
     right: 50px;
     opacity: 0.7; 
     cursor: pointer;
-    /* color: black; */
-    /* font-size: 35px;
-    border-radius: 20px; */
 }
 .arrow {
     width: 40px;
@@ -682,6 +667,10 @@ li {
     .text-konto {
         width: 90%;
     }
+    #map {
+        width: 250px;
+        height: 350px;
+    }
 }
 
 @media all and (max-width: 912px) {
@@ -731,10 +720,6 @@ li {
     #box-address {
         padding: 20px 5px;
     }
-    #map {
-        width: 250px;
-        height: 350px;
-    }
     .text-direction {
         text-shadow: 0.2px 0.2px;
     }
@@ -764,6 +749,9 @@ li {
         width: 200px;
         font-size: 13px;
     }
+    .btn {
+        width: 230px;
+    }
     .text-address-top {
         font-size: 18px;
         text-align: start;
@@ -787,6 +775,9 @@ li {
         width: 180px;
         font-size: 11px;
     }
+    .btn {
+        width: 210px;
+    }
     .text-address-top {
         font-size: 16px;
     }
@@ -808,6 +799,9 @@ li {
     }
     .pictures-BG {
         align-self: center;
+    }
+    #menu {
+        flex-wrap: wrap;
     }
     .link {
         font-size: 15px;
@@ -848,6 +842,10 @@ li {
     .text-input-message  {
         width: 400px;
         height: 50px;
+    }
+    .btn {
+        width: 440px;
+        margin-top: 25px;
     }
     #box-address {
         width: 80%;
@@ -895,12 +893,28 @@ li {
         width: 300px;
         height: 70px;
     }
+    .btn {
+        width: 340px;
+    }
     .news {
         align-self: center;
         margin-right: 50px;
     }
     .konto {
         font-size: 14px;
+    }
+    .konto-dozvil {
+        padding: 5px ;
+    }
+    .merch {
+        height: 260px;
+    }
+    .btn-merch {
+        width: 33px;
+        height: 33px;
+    }
+    h5 {
+        font-size: 13px;
     }
 }
 
@@ -920,6 +934,10 @@ li {
     }
     .image-two {
         width: 250px;
+    }
+    .konto-dozvil {
+        text-align: center;
+        padding: 10px 40px;
     }
 }
 
@@ -944,6 +962,10 @@ li {
     .text-input, .text-input-message {
         width: 270px;
     }
+    .copyright {
+        width: 13px;
+        padding-right: 50px 5px 0 5px;
+    }
 }
 
 @media all and (max-width: 360px) {
@@ -966,6 +988,12 @@ li {
     }
     .konto {
         font-size: 12px;
+    }
+    .btn {
+        width: 310px;
+    }
+    h5 {
+        font-size: 11px;
     }
 }
 
@@ -1031,5 +1059,8 @@ li {
     }
     .statut {
         margin-left: 0;
+    }
+    .btn {
+        width: 236px;
     }
 }
